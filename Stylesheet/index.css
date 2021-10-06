@@ -1,0 +1,52 @@
+/* Font Link */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  box-sizing: border-box;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.nav {
+  background-color: #219ebc !important;
+
+  height: 100vh;
+}
+.row {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.hover-btn {
+  transition: all 0.9s ease-in-out;
+}
+.hover-btn:hover {
+  background-color: #fff !important;
+  color: #219ebc !important;
+}
+.btn {
+  text-align: left !important;
+  width: 100% !important;
+  outline: 0 !important;
+}
+.position-absolute {
+  width: 80% !important;
+}
+.admin-btn {
+  background-color: #fff !important;
+  color: #219ebc !important;
+}
+.border-bottom {
+  border-top: 1px solid #fff !important;
+}
+hr {
+  background-color: #fff !important;
+  margin: 5px !important;
+}
+
+.btn-primary {
+  background-color: #219ebc !important;
+  border: 0 !important;
+}
+.line::before {
+}

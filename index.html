@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apply Your From</title>
+    <!-- Stylesheet link -->
+    <link rel="stylesheet" href="./Stylesheet/index.css" />
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="./Stylesheet/bootstrap.min.css" />
+    <!-- Font Awesome Link -->
+    <script
+      src="https://kit.fontawesome.com/7e1812adc5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <div class="row">
+        <nav
+          class="col-sm-3 col-md-2 nav pt-5 d-flex justify-content-center p-0"
+        >
+          <div class="container-fluid text-center position-relative">
+            <a class="navbar-brand text-white fs-1 fw-bold" href="#">Logo</a>
+            <ul class="list-inline text-start mt-5">
+              <li>
+                <a onclick="signIn()"
+                  class="btn text-decoration-none hover-btn text-white"
+                  href="#handleSignIn"
+                  >Sign In</a
+                >
+                <hr />
+              </li>
+              <li>
+                <a onclick="signUp()"
+                  class="btn text-decoration-none hover-btn text-white"
+                  href="#handleSignUp"
+                  >Sign Up</a
+                >
+                <hr />
+              </li>
+              <li>
+                <a onclick="apply()"
+                  class="btn text-decoration-none hover-btn text-white"
+                  href="#handleApply"
+                  >Apply</a
+                >
+                <hr />
+              </li>
+              <li>
+                <a onclick="applyList()"
+                  class="btn text-decoration-none hover-btn text-white"
+                  href="#handleList"
+                  >Apply List</a
+                >
+                <hr />
+              </li>
+            </ul>
+            <li class="position-absolute bottom-0 p-0 py-2 mb-5">
+              <a onclick="applyList()"
+                class="btn admin-btn text-center text-decoration-none fw-normal"
+                href="#handleList"
+                ><i class="fas fa-user"></i> <span class="p-1">Admin</span></a
+              >
+            </li>
+          </div>
+        </nav>
+          <div
+            class="d-flex justify-content-center align-items-center col-md-10"
+          >
+            <!-- Sign In  -->
+            <div id="handleSignIn" class="signin  w-25 p-3 shadow-sm border rounded">
+              <h2 class="fw-bolder pb-3">Sign In</h2>
+              <form>
+                <div class="mb-3">
+                  <label for="signInInput" class="form-label"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="signInInput"
+                    aria-describedby="emailHelp"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="signInPassword1" class="form-label"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="signInPassword1"
+                    placeholder="Password"
+                  />
+                </div>
+                <div class="mb-3 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="signInCheckBox"
+                  />
+                  <label class="form-check-label" for="signInCheckBox"
+                    >Remember me</label
+                  >
+                </div>
+                <button type="submit" class="btn text-center btn-primary">
+                  Sign In
+                </button>
+
+                <p class="text-center pt-3">
+                  Don't have an account?
+                  <a class="text-decoration-none" href="#">Sign Up</a>
+                </p>
+              </form>
+            </div>
+            <!-- Sign Up  -->
+            <div id="handleSignUp" class="signUp p-3 shadow-sm border rounded">
+              <h2 class="fw-bolder pb-2">Sign Up</h2>
+              <p class="pb-3">Create a new account</p>
+              <form>
+                <div class="d-flex">
+                  <div class="mb-3 pe-3">
+                    <label for="signUpFirstName" class="form-label"
+                    >First Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="signUpFirstName"
+                    
+                    placeholder="First Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="signUpLastName" class="form-label"
+                    >Last Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="signUpLastName"
+                    
+                    placeholder="Last Name Name"
+                  />
+                </div>
+                  </div>
+                <div class="mb-3">
+                  <label for="signUpEmail" class="form-label"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="signUpEmail"
+                    aria-describedby="emailHelp"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="signUpContact" class="form-label"
+                    >Contact Number</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="signUpContact"
+                    placeholder="Contact Number"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="signUpPassword" class="form-label"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="signUpPassword"
+                    placeholder="Password"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="signUpConfirmassword" class="form-label"
+                    >Confirm Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="signUpConfirmassword"
+                    placeholder="Confirm Password"
+                  />
+                </div>
+                <div class="mb-3 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="signUpCheckBox"
+                  />
+                  <label class="form-check-label" for="signUpCheckBox"
+                    >I accept the Terms of Use & Privacy Policy </label>
+                  
+                </div>
+                <button type="submit" class="btn text-center btn-primary">
+                  Sign Up
+                </button>
+
+                <p class="text-center pt-3">
+                  I have an account
+                  <a class="text-decoration-none" href="#">Sign In</a>
+                </p>
+              </form>
+            </div>
+            <!-- Apply  -->
+            <div id="handleApply" class="signUp p-3 shadow-sm border rounded">
+              <h2 class="fw-bolder pb-2">Application From</h2>
+              <p class="pb-3">Create a new Application</p>
+              <form>
+                <div class="d-flex">
+                  <div class="mb-3 pe-3">
+                    <label for="applyFirstName" class="form-label"
+                    >First Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="applyFirstName"
+                    
+                    placeholder="First Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="applyLastName" class="form-label"
+                    >Last Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="applyLastName"
+                    
+                    placeholder="Last Name Name"
+                  />
+                </div>
+                </div>
+                <div class="d-flex">
+                  <div class="mb-3 pe-3">
+                    <label for="applyEmail" class="form-label"
+                    >E-mail</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="applyEmail"
+                    
+                    placeholder="Your Email"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="applySubject" class="form-label"
+                    >Subject</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="applySubject"
+                    
+                    placeholder="Subject"
+                  />
+                </div>
+                </div>
+                <div class="mb-3">
+                  <label for="applyAboutYou" class="form-label"
+                    >About You</label
+                  >
+                  
+                  <textarea id="applyAboutYou" class="form-control" placeholder="About You"></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="applyContact" class="form-label"
+                    >Contact Number</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="applyContact"
+                    placeholder="Contact Number"
+                  />
+                </div>
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Upload Your CV</label>
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
+                <button type="submit" class="btn text-center btn-primary">
+                  Apply
+                </button>
+
+                <p class="text-center pt-3">
+                  Don't have an account
+                  <a class="text-decoration-none" href="#">Sign Up</a>
+                </p>
+              </form>
+            </div>
+            <!-- Apply List  -->
+            <div id="handleList" class="apllications-list w-50 p-3 shadow-sm border rounded">
+              <h2 class="fw-bolder pb-2">Application From</h2>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Serial</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Contact Number</th>
+                    <th scope="col">CV</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>mark@gmail.com</td>
+                    <td>01865874544</td>
+                    <td>Con't Upload Yet</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>jacob@gmail.com</td>
+                    <td>01865874544</td>
+                    <td>Con't Upload Yet</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>larry@gmail.com</td>
+                    <td>01865874544</td>
+                    <td>Con't Upload Yet</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
